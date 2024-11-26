@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Country Population Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **Country Population Viewer** is a web application that visualizes population data for countries using a REST API. This application displays the **list of countries with population figure** in a responsive bar chart. It is built with React.js and leverages Chart.js for data visualisation. The app is designed to be user-friendly and visually appealing.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Data Fetching**: Retrieves population data from the provided REST API.
+- **Interactive Chart**: Hover over bars to view exact population numbers.
+- **Responsive Design**: Works seamlessly on different screen size including mobile.
+- **Dynamic Data Processing**: Automatically sorts and limits data for easy understanding.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React.js**: Component-based JavaScript library for building the UI.
+- **Chart.js**: Library for creating responsive and customisable charts.
+- **Axios**: Promise-based HTTP client for fetching data from the API.
+- **CSS**: For styling the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+project-directory/ │ ├── public/ # Static files │ ├── index.html # Main HTML file │ ├── src/ # Application source code │ ├── components/ # Reusable UI components │ │ ├── Navbar.js # Navigation bar │ │ ├── Footer.js # Footer │ │ ├── Table.js # Table for displaying data │ │ ├── Chart.js # Bar chart visualization │ │ │ ├── services/ # API services │ │ ├── apiService.js # REST API interactions │ │ │ ├── App.js # Main application file │ ├── App.css # Main CSS file │ ├── .gitignore # Ignored files and folders ├── package.json # Project dependencies and scripts ├── README.md # Project documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application uses the following API:
 
-### `npm run eject`
+- **Countries Population API**:
+  - Endpoint: `https://countriesnow.space/api/v0.1/countries/population/cities`
+  - Provides population data for cities in various countries.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation and Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Follow these steps to set up the project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Node.js](https://nodejs.org/) installed (LTS version recommended).
+- [Git](https://git-scm.com/) installed.
 
-## Learn More
+### Steps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/repository-name.git
+Replace your-username and repository-name with your GitHub username and repository name.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Navigate to the Project Directory**
+cd repository-name
 
-### Code Splitting
+**Install Dependencies**
+npm install
+This command installs all required dependencies listed in package.json.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Start the Development Server**
+npm start
+This will start the application at http://localhost:3000.
 
-### Analyzing the Bundle Size
+**Usage**
+Open the application in your browser at http://localhost:3000.
+Contributions are welcome! To contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Fork the repository.**
+Create a new branch:
+git checkout -b feature-name
 
-### Making a Progressive Web App
+**Make your changes and commit them:**
+git commit -m "Description of changes"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Push the changes to your fork:**
+git push origin feature-name
 
-### Advanced Configuration
+**Future Enhancements**
+Here are a few planned improvements:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Filter by Region: Allow users to filter the chart by region (e.g., Asia, Europe).
+Error Handling: Display detailed error messages if the API call fails.
 
-### Deployment
+**Contact**
+If you have any questions or suggestions, feel free to contact me:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: farhanidrees01@gmail.com
