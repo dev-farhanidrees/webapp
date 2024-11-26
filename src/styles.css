@@ -1,0 +1,29 @@
+/* style.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+.spinner {
+  text-align: center;
+  font-size: 20px;
+  color: #007bff;
+  margin: 20px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .data-table, 
+  .chart-container {
+    width: 100%;
+    font-size: 14px;
+  }
+}
